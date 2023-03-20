@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Meus Documentos\\documentos\\programações\\BIBLIO-HAUS\\biblio-haus.csproj": {}
+    "C:\\Projetos\\Pessoais\\BIBLIO-HAUS\\biblio-haus.csproj": {}
   },
   "projects": {
-    "D:\\Meus Documentos\\documentos\\programações\\BIBLIO-HAUS\\biblio-haus.csproj": {
+    "C:\\Projetos\\Pessoais\\BIBLIO-HAUS\\biblio-haus.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Meus Documentos\\documentos\\programações\\BIBLIO-HAUS\\biblio-haus.csproj",
+        "projectUniqueName": "C:\\Projetos\\Pessoais\\BIBLIO-HAUS\\biblio-haus.csproj",
         "projectName": "biblio-haus",
-        "projectPath": "D:\\Meus Documentos\\documentos\\programações\\BIBLIO-HAUS\\biblio-haus.csproj",
+        "projectPath": "C:\\Projetos\\Pessoais\\BIBLIO-HAUS\\biblio-haus.csproj",
         "packagesPath": "C:\\Users\\franc\\.nuget\\packages\\",
-        "outputPath": "D:\\Meus Documentos\\documentos\\programações\\BIBLIO-HAUS\\obj\\",
+        "outputPath": "C:\\Projetos\\Pessoais\\BIBLIO-HAUS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\franc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0-windows"
+          "net5.0-windows7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,8 +59,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -70,7 +71,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

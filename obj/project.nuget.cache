@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HPcEdycQCUpMGwoS/qAhtJizQigFXqpSFXrQNl4BOGVbV6V/DaHBoL5g69rchMz7Q5yPwPJsHiNz+zDBNS7YJg==",
+  "dgSpecHash": "2fT/S8SFfuMSGcPqIyWIzWY1bfLcKlQSSzNxMJd3bLPlySEnPNB+iqL9Dv+fwT5dLKt6tSjygkvuj/VE3TLCRQ==",
   "success": true,
-  "projectFilePath": "D:\\Meus Documentos\\documentos\\programações\\BIBLIO-HAUS\\biblio-haus.csproj",
+  "projectFilePath": "C:\\Projetos\\Pessoais\\BIBLIO-HAUS\\biblio-haus.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\franc\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\franc\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
