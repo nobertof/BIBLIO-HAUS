@@ -20,7 +20,6 @@ namespace biblio_haus.Views
         {
             InitializeComponent();
             this.Resize += Form1_SizeChanged;
-            cardLogin.Paint += new PaintEventHandler(panel1_Paint);
         }
 
 

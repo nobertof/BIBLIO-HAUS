@@ -18,8 +18,8 @@ namespace biblio_haus.Views
         // Criação dos controles
         private Label labelUsuario;
         private Label labelSenha;
-        private TextBox campoUsuario;
-        private TextBox campoSenha;
+        private RoundedTextBox campoUsuario;
+        private RoundedTextBox campoSenha;
         private BotaoArredondado botaoLogin;
         private PainelArredondado cardLogin;
 
@@ -46,7 +46,7 @@ namespace biblio_haus.Views
 
             //Criando o card
             cardLogin = new PainelArredondado();
-            cardLogin.BackColor = Color.White;
+            cardLogin.BackColor =Theme.WHITE;
             cardLogin.Location = new Point(20, 20);
             cardLogin.Size = new Size(300, 200);
             cardLogin.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top | AnchorStyles.Bottom;
@@ -55,39 +55,23 @@ namespace biblio_haus.Views
             cardLogin.MaximumSize = new Size(500, 500);
             cardLogin.Location = new Point((this.ClientSize.Width - cardLogin.Width) / 2, (this.ClientSize.Height - cardLogin.Height) / 2);
 
-            // Configuração dos controles
-            labelUsuario = new Label();
+            campoUsuario = new RoundedTextBox("Usuario:", 200, 30);
 
-            labelUsuario.Location = new Point(30, 50);
-            labelUsuario.Text = "Usuário:";
-            labelUsuario.BackColor = Color.Transparent;
-            labelUsuario.FlatStyle = FlatStyle.Flat;
-            cardLogin.Controls.Add(labelUsuario);
-
-            campoUsuario = new TextBox();
-
-            campoUsuario.Location = new Point(130, 50);
+            campoUsuario.Location = new Point(20, 110);
             campoUsuario.MinimumSize = new Size(100, 0);
             campoUsuario.MaximumSize = new Size(200, 0);
             campoUsuario.Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top;
             cardLogin.Controls.Add(campoUsuario);
 
-            labelSenha = new Label();
 
-            labelSenha.Location = new Point(30, 80);
-            labelSenha.Text = "Senha:";
-            labelSenha.BackColor = Color.Transparent;
-            cardLogin.Controls.Add(labelSenha);
+            campoSenha = new RoundedTextBox("Senha:", 200, 30);
 
-            campoSenha = new TextBox();
-
-            campoSenha.Location = new Point(130, 80);
-            campoSenha.PasswordChar = '*';
+            campoSenha.Location = new Point(20, 80);
             cardLogin.Controls.Add(campoSenha);
 
             botaoLogin = new BotaoArredondado();
 
-            botaoLogin.Location = new Point(120, 120);
+            botaoLogin.Location = new Point((cardLogin.Height-botaoLogin.Width)/2, cardLogin.Height-100);
             botaoLogin.Text = "Entrar";
             cardLogin.Controls.Add(botaoLogin);
 
@@ -102,23 +86,6 @@ namespace biblio_haus.Views
                 (this.ClientSize.Height - cardLogin.Height) / 2
             );
 
-        }
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-            GraphicsPath panelPath = new GraphicsPath();
-            Rectangle rect = cardLogin.ClientRectangle;
-            int radius = 30;
-            panelPath.StartFigure();
-            panelPath.AddArc(rect.X, rect.Y, radius, radius, 180, 90);
-            panelPath.AddLine(rect.X + radius, rect.Y, rect.Width - radius, rect.Y);
-            panelPath.AddArc(rect.X + rect.Width - radius, rect.Y, radius, radius, 270, 90);
-            panelPath.AddLine(rect.Width, rect.Y + radius, rect.Width, rect.Height - radius);
-            panelPath.AddArc(rect.X + rect.Width - radius,
-                             rect.Y + rect.Height - radius, radius, radius, 0, 90);
-            panelPath.AddLine(rect.Width - radius, rect.Height, rect.X + radius, rect.Height);
-            panelPath.AddArc(rect.X, rect.Y + rect.Height - radius, radius, radius, 90, 90);
-            panelPath.CloseFigure();
-            cardLogin.Region = new Region(panelPath);
         }
 
 
